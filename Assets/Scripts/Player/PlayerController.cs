@@ -7,10 +7,30 @@ public class PlayerController : MonoBehaviour
     //Velocidad de movimiento del jugador
     public float moveSpeed;
 
+    //Nombre del área a la que vamos
+    public string areaTransitionName;
+
     //Referencia al RigidBody del jugador
     private Rigidbody2D theRB;
     //Referencia al Animator del jugador
     private Animator anim;
+
+    //Hacemos una referencia (Singleton)
+    public static PlayerController instance;
+
+    private void Awake()
+    {
+        //Inicializamos el Singleton si está vacío
+        if (instance == null) instance = this;
+        //Si no lo está
+        else
+        {
+            //Si hay otro objeto que no sea este, es destruido (evitamos la duplicación del jugador en el cambio entre escenas)
+            if (instance != this) Destroy(gameObject);
+        }
+        //Hace que el jugador no se destruido al cambiar entre escenas
+        DontDestroyOnLoad(gameObject);
+    }
 
     // Use this for initialization
     void Start()

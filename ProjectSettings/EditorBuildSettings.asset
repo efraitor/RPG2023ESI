@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GriffindorBedroom.unity
     guid: 4c9e91a8c9cfa6f438f92ed28b13a427
+  - enabled: 1
+    path: Assets/Scenes/7thFloorFrame.unity
+    guid: 466e92605419cae49b104336691b0255
   m_configObjects: {}

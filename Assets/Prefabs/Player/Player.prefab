@@ -139,6 +139,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 4
   areaTransitionName: 
+  noMoveLength: 0
+  thePlayerSprite: {fileID: -1980023592, guid: 45c312ace67533f49af8f1f644846615, type: 3}
+  canMove: 1
+  anim: {fileID: 0}
 --- !u!95 &1584538512904762866
 Animator:
   serializedVersion: 4

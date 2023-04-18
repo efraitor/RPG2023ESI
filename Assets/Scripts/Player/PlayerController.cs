@@ -14,6 +14,11 @@ public class PlayerController : MonoBehaviour
     public float noMoveLength;
     private float noMoveCount;
 
+    //Sprite de diálogo del jugador
+    public Sprite thePlayerSprite;
+    //Para controlar si el jugador puede moverse o no
+    public bool canMove = true;
+
     //Referencia al RigidBody del jugador
     private Rigidbody2D theRB;
     //Referencia al Animator del jugador

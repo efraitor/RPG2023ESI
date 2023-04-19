@@ -34,7 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1584538512904762879
 SpriteRenderer:
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 4
   areaTransitionName: 
-  noMoveLength: 0
+  noMoveLength: 0.5
   thePlayerSprite: {fileID: -1980023592, guid: 45c312ace67533f49af8f1f644846615, type: 3}
   canMove: 1
   anim: {fileID: 0}

@@ -409,8 +409,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1628093623
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -1045771447, guid: 623048cd8ca244947be760d370d057e1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -755,6 +755,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1722964317, guid: 017802f4e85d63543abafde788861d09, type: 3}
+      propertyPath: musicToPlay
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7327073730682004517, guid: 017802f4e85d63543abafde788861d09, type: 3}
       propertyPath: m_Name
       value: Main Camera

@@ -53,8 +53,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Si el contador de tiempo sin Input está vacío
-        if (noMoveCount <= 0)
+        //Si el contador de tiempo sin Input está vacío y el personaje se puede mover
+        if (noMoveCount <= 0 && canMove)
         {
             //Movemos al personaje usando la velocidad de su RigidBody, obteniendo los Inputs de los ejes de movimiento
             theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized * moveSpeed; //Con normalized conseguimos que la diagonal también tenga valor 1
